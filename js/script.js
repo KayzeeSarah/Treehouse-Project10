@@ -15,10 +15,10 @@ var search = document.querySelector("#search");
 // request
 var randomEmployees = new XMLHttpRequest();
 randomEmployees.onreadystatechange = function () {
-  if(randomEmployees.readyState === 4) {
-    var response = JSON.parse(randomEmployees.responseText); //parsing response
+  if (randomEmployees.readyState === 4) {
+    var response = JSON.parse(randomEmployees.responseText);
+    //parsing response
     var employeesObject = response.results;
-          console.log(employeesObject); // place data in console
     for (let i=0; i<employeesObject.length; i+=1) {
 
       //place required data in an object
@@ -47,19 +47,19 @@ randomEmployees.send();
 function employeesDisplay () {
 
   for(i=0; i<employeesLimit; i+=1){
-    var number = document.createElement('div');
+    var number = document.createElement("div");
     number.textContent = [i];
     number.className = "number";
 
 //create main individual employee div
-    var individualBox = document.createElement('div');
+    var individualBox = document.createElement("div");
     individualBox.className = "individualBox";
 
 //create sub-main individual employee div
-    var smallBox = document.createElement('div');
+    var smallBox = document.createElement("div");
     smallBox.className = "smallBox";
 
-    var bigBox = document.createElement('div');
+    var bigBox = document.createElement("div");
     bigBox.className = "bigBox";
 
 
@@ -68,23 +68,23 @@ function employeesDisplay () {
     picture.className = "picture";
 
     //create div for name
-    var name = document.createElement('div');
+    var name = document.createElement("div");
     name.className = "name";
     //create div for email
-    var email = document.createElement('div');
+    var email = document.createElement("div");
     email.className = "email";
     //create div for city
-    var city = document.createElement('div');
+    var city = document.createElement("div");
     city.className = "city";
 
     //create div for phone
-    var phone = document.createElement('div');
+    var phone = document.createElement("div");
     phone.className = "phone";
     //create div for address
-    var address = document.createElement('div');
+    var address = document.createElement("div");
     address.className = "address";
     //create div for birthday
-    var birthday = document.createElement('div');
+    var birthday = document.createElement("div");
     birthday.className = "birthday";
 
     //insert data inside created divs
