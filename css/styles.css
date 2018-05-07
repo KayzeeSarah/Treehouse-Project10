@@ -30,7 +30,7 @@ h2 {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #B9B7AF;
-  width: 100%;
+  max-width: 100%;
 }
 
 .search-bar input {
@@ -176,4 +176,40 @@ h2 {
   right: -3%;
   margin-right: 30px;
   float: right;
+}
+
+@media (min-width: 768px) {
+  .individualBox {
+    width: 40%;
+  }
+  .detail-modal-window {
+    width: 70%
+  }
+  .close {
+    right: 16%;
+  }
+  .right-arrow {
+    margin-right: 20%;
+  }
+  .left-arrow {
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .individualBox {
+    width: 25%;
+  }
+  .detail-modal-window {
+    width: 40%
+  }
+  .close {
+    right: 31%;
+  }
+  .right-arrow {
+    margin-right: 34%;
+  }
+  .left-arrow {
+    margin-left: 34%;
+  }
 }
