@@ -49,7 +49,7 @@ function employeesDisplay () {
   for(i=0; i<employeesLimit; i+=1){
     var number = document.createElement('div');
     number.textContent = [i];
-    number.classname = "number";
+    number.className = "number";
 
 //create main individual employee div
     var individualBox = document.createElement('div');
