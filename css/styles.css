@@ -11,7 +11,7 @@ main {
 }
 
 main {
-  background-color: #1A2022;
+  background: linear-gradient(to bottom right, #1A2022 , #1F262E, #293F4C);
   position: absolute;
   width: 100%;
   min-height: 100vh;
@@ -37,6 +37,7 @@ h2 {
   width: 80%;
   font-size: 1.2em;
   padding-left: 0.1em;
+  border: 2px #ABA19C solid;
 }
 
 .employees-container {
@@ -48,18 +49,17 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  background-color: #E5B1A1;
+  width: 70%;
+  background-color: #6B6562;
   margin: 10px auto;
   padding: 10px;
-  box-shadow: 0 8px 6px -6px black;
   transition: all .3s;
 }
 
 
 .individualBox:hover {
-  transform: translate(3px);
-  background-color: #C69F91;
+  transform: rotate(2deg);
+  background-color: #647B96;
   box-shadow: none;
 }
 
@@ -105,7 +105,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: #85B1A1;
+  background-color: #384554;
   width: 90%;
   height: 80%;
   margin: auto;
@@ -152,7 +152,7 @@ h2 {
   text-align: center;
   line-height: 0.5;
   border-radius: 10px;
-  background-color: #E5B1A1;
+  background-color: #7590B0;
   font-size: 5em;
   position: absolute;
   top: 17%;
