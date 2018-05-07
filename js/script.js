@@ -188,6 +188,7 @@ function searchEmployee() {
   var name = document.querySelectorAll(".name");
   var individualBox = document.querySelectorAll(".individualBox");
   for(let i=0; i<name.length; i+=1) {
+    //console.log(name[i]);
     if (name[i].textContent.toLowerCase().indexOf(search.value.toLowerCase()) ==-1||
       name[i].textContent.toUpperCase().indexOf(search.value.toUpperCase()) ==-1) {
       individualBox[i].style.display = "none";
