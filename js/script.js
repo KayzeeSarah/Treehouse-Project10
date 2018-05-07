@@ -49,7 +49,7 @@ function employeesDisplay () {
   for(i=0; i<employeesLimit; i+=1){
     var number = document.createElement('div');
     number.textContent = [i];
-    number.classname = "individualBox";
+    number.classname = "number";
 
 //create main individual employee div
     var individualBox = document.createElement('div');
@@ -135,7 +135,7 @@ function displayDetailModalWindow (e) {
 
 //function to get nextEmployee data when arrow is clicked
 function nextEmployee () {
-    var employeeBox = document.querySelectorAll('individualBox');
+    var individualBox = document.querySelectorAll('.individualBox');
     var number = document.querySelector(".number");
     var numberInt = number.textContent;
     numberInt = parseInt(numberInt);
@@ -154,7 +154,7 @@ function nextEmployee () {
 
 //function to get previousEmployee data when arrow is clicked
 function prevEmployee () {
-    var employeeBox = document.querySelectorAll('.individualBox');
+    var individualBox = document.querySelectorAll('.individualBox');
     var number = document.querySelector(".number");
     var numberInt = number.textContent;
     numberInt = parseInt(numberInt);
