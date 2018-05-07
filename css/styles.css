@@ -1,0 +1,179 @@
+smallBox/* main style */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #1A2022;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.search-bar {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #B9B7AF;
+  width: 100%;
+}
+
+.search-bar input {
+  width: 80%;
+  font-size: 1.2em;
+  padding-left: 0.1em;
+}
+
+.employees-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individualBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: #E5B1A1;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  transition: all .3s;
+}
+
+
+.individualBox:hover {
+  transform: translate(3px);
+  background-color: #C69F91;
+  box-shadow: none;
+}
+
+.individualBox .bigBox {
+  display: none;
+}
+
+.individualBox .smallBox {
+  align-items: center;
+  flex-grow: 1;
+  cursor: default;
+}
+
+.individualBox .picture {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+}
+
+
+/* overlay appear when smallBox is clicked */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  top:0;
+}
+
+/* darken the background */
+.screen {
+  background-color: #000;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.7;
+}
+
+.detail-modal-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #85B1A1;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  padding: 30px 0 ;
+  top: 25px;
+  z-index: 70;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.detail-modal-window .picture {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.detail-modal-window .bigBox,
+.detail-modal-window .smallBox {
+  text-align: center;
+}
+
+.detail-modal-window .smallBox {
+  padding-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: 3px solid grey;
+}
+
+.detail-modal-window .bigBox {
+  margin-top: 30px;
+}
+
+/* close the detail modal window */
+.close{
+  position: absolute;
+  right: 6%;
+  top: 3%;
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 80;
+}
+
+/* arrows to navigate to other employees */
+.arrow {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 0.5;
+  border-radius: 10px;
+  background-color: #E5B1A1;
+  font-size: 5em;
+  position: absolute;
+  top: 17%;
+  cursor: pointer;
+  z-index: 80;
+  transition: all .3s;
+}
+
+.arrow:hover {
+  background-color: #C69F91;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+.left-arrow {
+  left: -3%;
+  margin-left: 30px;
+  float: left;
+}
+
+.right-arrow {
+  right: -3%;
+  margin-right: 30px;
+  float: right;
+}

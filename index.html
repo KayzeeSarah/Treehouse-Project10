@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Directory</title>
+    <!-- stylesheet links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <!-- //create card overlay -->
+      <div class="overlay">
+        <div class="card">
+          <span class="close">&#215;</span>
+        </div>
+        <span class="arrow left-arrow">&lsaquo;</span>
+        <span class="arrow right-arrow">&rsaquo;</span>
+        <div class="detail-modal-window"></div>
+      </div>
+      <!-- overlay ends -->
+
+      <div class="main-container">
+        <h2>Employees Directory</h2>
+        <!-- create search bar -->
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search" autocomplete="off">
+        </div>
+        <div>
+          <!-- single employee container -->
+          <div class="employees-container"></div>
+        </div>
+      </div>
+      <!-- main container ends -->
+    </main>
+    <!-- script links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+    </html>
